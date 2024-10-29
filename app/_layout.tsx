@@ -8,12 +8,18 @@ export default function index() {
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
         <Stack 
             initialRouteName="index" 
+            screenOptions={{
+                headerShown: false
+            }}
         >
             <Stack.Screen 
                 name="index" 
             />
             <Stack.Screen 
-                name="profile" 
+                name="translate" 
+            />
+            <Stack.Screen 
+                name="[mode]"
             />
         </Stack>
     </SafeAreaProvider>
