@@ -9,7 +9,7 @@ export default function index() {
     <Provider>
         <SafeAreaProvider initialMetrics={initialWindowMetrics}>
             <Stack 
-                initialRouteName="index" 
+                initialRouteName="translate" 
                 screenOptions={{
                     headerShown: false
                 }}

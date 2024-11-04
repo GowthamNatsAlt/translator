@@ -2,6 +2,7 @@ import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 import { Link, router } from 'expo-router'
 import Wrapper from '@/components/Wrapper'
+import { BaseText } from '@/utils/Typography'
 
 export default function Index() {
   return (
@@ -9,7 +10,7 @@ export default function Index() {
       <Pressable
         onPress={() => router.push("/translate")}
       >
-        <Text className='text-4xl'>Start translating</Text>
+        <BaseText className='text-4xl' fontWeight='400'>Start translating</BaseText>
       </Pressable>
     </Wrapper>
   )

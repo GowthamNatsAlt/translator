@@ -11,9 +11,9 @@ export default function Wrapper(
   return (
     <View
         style={{
-            paddingTop: insets.top
+            paddingTop: insets.top + 10
         }}
-        className='flex-1 flex-col items-center justify-center gap-10'
+        className='flex-1 flex-col gap-10 bg-base px-5'
     >
       {children}
     </View>
